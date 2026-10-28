@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Filmes e Séries</string>
+
+    <!-- Spinners do cadastro: o primeiro item é apenas um aviso e não é válido -->
+    <string-array name="tipos_cadastro">
+        <item>Selecione o tipo</item>
+        <item>Filme</item>
+        <item>Série</item>
+        <item>Documentário</item>
+        <item>Animação</item>
+    </string-array>
+
+    <string-array name="generos_cadastro">
+        <item>Selecione o gênero</item>
+        <item>Ação</item>
+        <item>Comédia</item>
+        <item>Drama</item>
+        <item>Terror</item>
+        <item>Ficção Científica</item>
+        <item>Romance</item>
+        <item>Aventura</item>
+    </string-array>
+
+    <!-- Spinner do filtro -->
+    <string-array name="tipos_filtro">
+        <item>Todos</item>
+        <item>Filme</item>
+        <item>Série</item>
+        <item>Documentário</item>
+        <item>Animação</item>
+    </string-array>
+</resources>

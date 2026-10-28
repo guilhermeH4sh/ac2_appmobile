@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ===================== CADASTRO / EDIÇÃO ===================== -->
+        <TextView
+            android:id="@+id/tvTituloForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo filme ou série"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textCapWords"
+            android:maxLines="1" />
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <Spinner
+            android:id="@+id/spGenero"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <EditText
+            android:id="@+id/etAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ano de lançamento"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/etNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nota pessoal (0 a 10)"
+            android:inputType="numberDecimal"
+            android:maxLength="4" />
+
+        <CheckBox
+            android:id="@+id/cbAssistido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Já assistiu?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="Salvar" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:text="Limpar / Cancelar" />
+        </LinearLayout>
+
+        <!-- ===================== FILTROS ===================== -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Meus filmes e séries"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spFiltroTipo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <CheckBox
+            android:id="@+id/cbFiltroAssistidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar apenas já assistidos" />
+
+        <!-- ===================== LISTA ===================== -->
+        <TextView
+            android:id="@+id/tvVazio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Nenhum item encontrado."
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFilmes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

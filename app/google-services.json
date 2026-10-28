@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "73177722093",
+    "project_id": "ac2-app-mobile",
+    "storage_bucket": "ac2-app-mobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73177722093:android:875772477e1796bf2270e4",
+        "android_client_info": {
+          "package_name": "com.example.gerenciadorfilmes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2wjobCbRd7Y8Z-OKHoqSB8M6VW1mJB9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
